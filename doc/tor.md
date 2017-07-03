@@ -1,4 +1,4 @@
-TOR SUPPORT IN LITECOIN
+TOR SUPPORT IN HASHCOIN
 ======================
 
 It is possible to run Hashcoin as a Tor hidden service, and connect to such services.
