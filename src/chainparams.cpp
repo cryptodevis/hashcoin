@@ -114,10 +114,10 @@ public:
         nDefaultPort = 9333;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1499126400, 0, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1499126400, 816393, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x"));
-        assert(genesis.hashMerkleRoot == uint256S("0x"));
+        assert(consensus.hashGenesisBlock == uint256S("0xedf060880a41f8fe9c7521d663272673a510dfd193b0fdd918f2b34fdab34546"));
+        assert(genesis.hashMerkleRoot == uint256S("0x8402aed0f0c6a2ddd573cbd6c8204653c16d914472e2b825583c7da08b2ec7b3"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         vSeeds.push_back(CDNSSeedData("seed.hashcoin.io", "34.201.95.123", true));
@@ -142,7 +142,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            (  0, uint256S("0x"))
+            (  0, uint256S("0x0xedf060880a41f8fe9c7521d663272673a510dfd193b0fdd918f2b34fdab34546"))
         };
 
         chainTxData = ChainTxData{
@@ -202,10 +202,10 @@ public:
         nDefaultPort = 19335;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1499126400, 0, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1499169600, 1339909, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x"));
-        assert(genesis.hashMerkleRoot == uint256S("0x"));
+        assert(consensus.hashGenesisBlock == uint256S("0x2dce031bffba617ceafe6e499bb3b1cbae49e0076129bf4238bd220779331405"));
+        assert(genesis.hashMerkleRoot == uint256S("0x8402aed0f0c6a2ddd573cbd6c8204653c16d914472e2b825583c7da08b2ec7b3"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -230,7 +230,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            ( 0, uint256S("0x")),
+            ( 0, uint256S("0x0x2dce031bffba617ceafe6e499bb3b1cbae49e0076129bf4238bd220779331405")),
         };
 
         chainTxData = ChainTxData{
